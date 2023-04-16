@@ -1,0 +1,105 @@
+@media screen and (max-width:800px){
+    .socialmedia {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    #home .content header .content__header nav ul li a .selected  {
+        color: #ff5080;
+    }
+
+    #icon-nav {
+        display: block;
+    }
+
+    #home .content .presentation h2 {
+        font-size: 40px;
+    }
+
+    #aboutme {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #aboutme .aboutme__container-photo {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #aboutme .aboutme__container-photo img {
+        padding: 8px;
+    }
+
+    #aboutme .aboutme__div-aboutme .aboutme__title-section {
+        text-align: center;
+    }
+
+    #aboutme .aboutme__div-aboutme h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #services {
+        padding: 50px 15px;
+    }
+
+    #services .services__row {
+        display: block;
+    }
+
+    #services .services__row .service {
+        margin: 10px auto;
+    }
+
+    .skills__container {
+        padding: 50px 20px;
+    }
+
+    #projects {
+        padding: 50px 0;
+    }
+
+    #projects .projects__row {
+        display: block;
+    }
+
+    #projects .projects__row .project {
+        margin: 10px auto;
+    }
+
+    #contact {
+        padding: 50px 15px;
+    }
+
+    #contact .container__contact-form .half {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contact .container__contact-form .half input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

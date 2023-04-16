@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Portfolio | Alejandro Santis</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- section Home -->
+    <section id="home">
+        <div class="content">
+            <header>
+                <div class="content__header">
+                    <h1>
+                        <i class="fa-solid fa-code"></i>
+                        Alejandro Santis Castro
+                    </h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#home" class="selected" onclick="selectedLink(this)">Home</a></li>
+                            <li><a href="#aboutme" onclick="selectedLink(this)">About me</a></li>
+                            <li><a href="#services" onclick="selectedLink(this)">Servicies</a></li>
+                            <li><a href="#skills" onclick="selectedLink(this)">Skills</a></li>
+                            <li><a href="#formation" onclick="selectedLink(this)">Formation</a></li>
+                            <li><a href="#projects" onclick="selectedLink(this)">Projects</a></li>
+                            <li><a href="#contact" onclick="selectedLink(this)">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icons responsive menu -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Icons social media -->
+                    <div class="socialmedia">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="welcome">Welcome</p>
+                <h2>I'm <span>Alejandro Santis Castro</span>, Junior Front-end Developer</h2>
+                <p class="description">
+                    Junior PHP developer and front end developer, student in training in Front-end Development, looking for opportunities to gain professional experience.
+                </p>
+                <a href="#projects">Go to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section About me -->
+    <section id="aboutme">
+        <div class="aboutme__container-photo">
+            <img src="img/photo-profile.jpeg" alt="Profile photo">
+        </div>
+        <div class="aboutme__div-aboutme">
+            <p class="aboutme__title-section">About Me</p>
+            <h2>Hi, I'm <span>Alejandro Santis Castro</span></h2>
+            <h3>Junior Front End Developer</h3>
+            <p>
+                Junior PHP Developer and Front End Developer in training, student in training in Front-end Development, looking for opportunities to gain professional experience, specifically in the area of Web development, building Apis and growth in the Front-end with JavaScript, in order to improve technical and soft skills that lead to be a professional quality and excellence.
+            </p>
+            <br>
+            <p>
+                I have the ability to work in a team, high capacity for cooperation, as well as a great willingness to support in the best possible way; with a great vocation for my work and also with the greatest willingness to learn and share the knowledge acquired.
+            </p>
+            <a href="#">Dowload CV</a>
+        </div>
+    </section>
+
+    <!-- section servicies -->
+    <section id="services">
+        <h3 class="services__title">My Services</h3>
+        <div class="services__row">
+            <div class="service">
+                <span class="service-icon"><i class="fa-solid fa-code"></i></span>
+                <h4>Website Development</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li>Web Site</li>
+                    <li>Development</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam temporibus nesciunt ipsam iusto praesentium nisi, quam ducimus adipisci cum repellat beatae culpa harum sint saepe, recusandae facilis.
+                </p>
+            </div>
+            <div class="service">
+                <span class="service-icon"><i class="fa-solid fa-code"></i></span>
+                <h4>API Development</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li>Development</li>
+                    <li>API</li>
+                    <li>Web Services</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam temporibus nesciunt ipsam iusto praesentium nisi, quam ducimus adipisci cum repellat beatae culpa harum sint saepe, recusandae facilis.
+                </p>
+            </div>
+            <div class="service">
+                <span class="service-icon"><i class="fa-solid fa-code"></i></span>
+                <h4>WebApp Dev</h4>
+                <hr>
+                <ul class="service-tag">
+                    <li>Dev</li>
+                    <li>WebApp</li>
+                    <li>Website layout</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam temporibus nesciunt ipsam iusto praesentium nisi, quam ducimus adipisci cum repellat beatae culpa harum sint saepe, recusandae facilis.
+                </p>
+            </div>
+    </section>
+
+    <!-- section skills -->
+    <section id="skills">
+        <div class="skills__container">
+            <h3>SKILLS</h3>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>Html</p>
+                    <span class="percent">95%</span>
+                </div>
+                <div class="bar">
+                    <div id="html" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>Css</p>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="bar">
+                    <div id="css" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>JavaScript</p>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="bar">
+                    <div id="js" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>React</p>
+                    <span class="percent">60%</span>
+                </div>
+                <div class="bar">
+                    <div id="react" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>Php</p>
+                    <span class="percent">85%</span>
+                </div>
+                <div class="bar">
+                    <div id="php" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>Laravel</p>
+                    <span class="percent">70%</span>
+                </div>
+                <div class="bar">
+                    <div id="laravel" class=""></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="list"></span>MySQL</p>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="bar">
+                    <div id="mysql" class=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section Projects -->
+    <section id="projects">
+        <h3 class="porjects__title">MY PROJECTS</h3>
+        <div class="projects__row">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/app-eventos.png" alt="Project image">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>WebApp Dev</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/app-geolocalizacion.png" alt="Project image">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>WebApp Dev</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/app-pomodoro.png" alt="Project image">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>WebApp Dev</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/app-mask.png" alt="Project image">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>WebApp Dev</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/app-encriptador.png" alt="Project image">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>WebApp Dev</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact">
+        <h3 class="contact__title">Contact</h3>
+        <div class="container__contact-form">
+            <form action="">
+                <div class="form__row half">
+                    <input type="text" placeholder="Fullname" class="input-half">
+                    <input type="email" placeholder="Email Address" class="input-half">
+                </div>
+                <div class="form__row">
+                    <input type="text" placeholder="Theme..." class="input-full">
+                </div>
+                <div class="form__row">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn-send">
+            </form>
+        </div>
+    </section>
+
+    <!-- section footer -->
+    <footer>
+        <p>Todos los derechos reservados &copy 2022</p>
+        <div class="socialmedia">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

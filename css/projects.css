@@ -16,16 +16,18 @@
 
 #projects .projects__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 30px 0;
 }
 
 #projects .projects__row .project {
     max-width: 450px;
     border: 1px solid #000;
-    margin: 0 10px;
+    margin: 5px 0px;
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 } 
 
 #projects .projects__row .project img {
@@ -50,6 +52,27 @@
     opacity: 0;
     bottom: -40px;
     transition: .5s;
+}
+
+#projects .projects__row .project .info a {
+    display: inline-block;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #000;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#projects .projects__row .project .info .repo {
+    background-color: #ff5080;
+    color: #fff;
+}
+
+#projects .projects__row .project .info .repo:hover {
+    opacity: 0.8;
 }
 
 #projects .projects__row .project:hover .info {

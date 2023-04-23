@@ -77,6 +77,30 @@
         padding: 50px 20px;
     }
 
+    #hobbies {
+        padding: 50px 15px;
+    }
+
+    #hobbies .hobbies__container {
+        display: block;
+    }
+
+    #hobbies .hobbies__container .hobbie {
+        margin: 10px auto;
+    }
+
+    #formation {
+        padding: 50px 15px;
+    }
+
+    #formation .formation__row {
+        display: block;
+    }
+
+    #formation .formation__row .formation__card {
+        margin: 10px auto;
+    }
+
     #projects {
         padding: 50px 0;
     }

@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Portfolio | Alejandro Santis</title>
+    <link rel="shortcut icon" href="/img/codefolder-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/aboutme.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/hoobies.css">
+    <link rel="stylesheet" href="css/formation.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -22,15 +25,16 @@
             <header>
                 <div class="content__header">
                     <h1>
-                        <i class="fa-solid fa-code"></i>
-                        Alejandro Santis Castro
+                        <a href="#home" class="selected" onclick="selectedLink(this)">
+                            <i class="fa-solid fa-code"></i>
+                            Alejandro Santis Castro</a> 
                     </h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#home" class="selected" onclick="selectedLink(this)">Home</a></li>
                             <li><a href="#aboutme" onclick="selectedLink(this)">About me</a></li>
-                            <li><a href="#services" onclick="selectedLink(this)">Servicies</a></li>
+                            <li><a href="#services" onclick="selectedLink(this)">Services</a></li>
                             <li><a href="#skills" onclick="selectedLink(this)">Skills</a></li>
+                            <li><a href="#hobbies" onclick="selectedLink(this)">Hobbies</a></li>
                             <li><a href="#formation" onclick="selectedLink(this)">Formation</a></li>
                             <li><a href="#projects" onclick="selectedLink(this)">Projects</a></li>
                             <li><a href="#contact" onclick="selectedLink(this)">Contact</a></li>
@@ -44,9 +48,9 @@
 
                     <!-- Icons social media -->
                     <div class="socialmedia">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/asantiscastro/?locale=ms_MY" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/alejo-santis-castro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Alejo-Santis" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </header>
@@ -77,7 +81,7 @@
             <p>
                 I have the ability to work in a team, high capacity for cooperation, as well as a great willingness to support in the best possible way; with a great vocation for my work and also with the greatest willingness to learn and share the knowledge acquired.
             </p>
-            <a href="#">Dowload CV</a>
+            <a href="https://drive.google.com/file/d/1PJfJtqZdUb3oRX1xhyO46Tq7DsrJt8O9/view?usp=share_link" target="_blank">Dowload CV</a>
         </div>
     </section>
 
@@ -196,48 +200,119 @@
         </div>
     </section>
 
+    <!-- section hobbies -->
+    <section id="hobbies">
+        <h3 class="hobbies__title">HOBBIES</h3>
+        <div class="hobbies__container">
+            <div class="hobbie">
+                <div class="info">
+                    <i class="fa-solid fa-futbol"></i>
+                    <p><span class="list"></span>Play Soccer</p>
+                </div>
+            </div>
+            <div class="hobbie">
+                <div class="info">
+                    <i class="fa-solid fa-tv"></i>
+                    <p><span class="list"></span>Watch Series</p>
+                </div>
+            </div>
+            <div class="hobbie">
+                <div class="info">
+                    <i class="fa-solid fa-headphones"></i>
+                    <p><span class="list"></span>Listen to Music</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section formation -->
+    <section id="formation">
+        <h3 class="formation__title">Formation</h3>
+        <div class="formation__row">
+            <div class="formation__card">
+                <span class="formation__card-icon">
+                    <i class="fa-solid fa-school"></i>
+                </span>
+                <h4>SENA colombia</h4>
+                <hr>
+                <img class="formation__card-image" src="/img/sena-colombia.jpg" alt="Sena Colombia">
+                <p>
+                    SENA (2020 - 2021)
+                </p>
+            </div>
+            <div class="formation__card">
+                <span class="formation__card-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <h4>Alura Latam - ONE</h4>
+                <hr>
+                <img class="formation__card-image" src="/img/alura-latam.png" alt="Sena Colombia">
+                <p>
+                    Alura Latam (2022 - 2023)
+                </p>
+            </div>
+            <div class="formation__card">
+                <span class="formation__card-icon"><i class="fa-solid fa-code"></i></span>
+                <h4>Website Development</h4>
+                <hr>
+                <img class="formation__card-image" src="/img/codigo-facilito2.png" alt="Sena Colombia">
+                <p>
+                   Codigo Facilito (2021)
+                </p>
+            </div>
+        
+    </section>
+
     <!-- section Projects -->
     <section id="projects">
         <h3 class="porjects__title">MY PROJECTS</h3>
         <div class="projects__row">
             <div class="project">
+                <img src="img/app-galeria.png" alt="Project image">
                 <div class="overlay"></div>
-                <img src="img/app-eventos.png" alt="Project image">
                 <div class="info">
-                    <h4>Project Description</h4>
-                    <p>WebApp Dev</p>
+                    <a href="https://github.com/Alejo-Santis/Galeria-Imagenes-practicas" target="_blank">Repo</a>
+                    <a class="repo" href="https://alejo-santis.github.io/Galeria-Imagenes-practicas/" target="_blank">View Demo</a>
                 </div>
             </div>
             <div class="project">
                 <div class="overlay"></div>
-                <img src="img/app-geolocalizacion.png" alt="Project image">
+                <img src="img/app-movie-list.png" alt="Project image">
                 <div class="info">
-                    <h4>Project Description</h4>
-                    <p>WebApp Dev</p>
+                    <a href="https://github.com/Alejo-Santis/catallogo-pelis" target="_blank">Repo</a>
+                    <a class="repo" href="https://alejo-santis.github.io/catallogo-pelis/" target="_blank">View Demo</a>
                 </div>
             </div>
             <div class="project">
                 <div class="overlay"></div>
-                <img src="img/app-pomodoro.png" alt="Project image">
+                <img src="img/app-org-react.png" alt="Project image">
                 <div class="info">
-                    <h4>Project Description</h4>
-                    <p>WebApp Dev</p>
+                    <a href="https://github.com/Alejo-Santis/org" target="_blank">Repo</a>
+                    <a class="repo" href="https://org-8vwsq2c0j-alejosantismk11-gmailcom.vercel.app/" target="_blank">View Demo</a>
                 </div>
             </div>
             <div class="project">
                 <div class="overlay"></div>
-                <img src="img/app-mask.png" alt="Project image">
+                <img src="img/app-todo.png" alt="Project image">
                 <div class="info">
-                    <h4>Project Description</h4>
-                    <p>WebApp Dev</p>
+                    <a href="https://github.com/Alejo-Santis/todo-app-alura-latam-ONE" target="_blank">Repo</a>
+                    <a class="repo" href="https://alejo-santis.github.io/todo-app-alura-latam-ONE/" target="_blank">View Demo</a>
                 </div>
             </div>
             <div class="project">
                 <div class="overlay"></div>
                 <img src="img/app-encriptador.png" alt="Project image">
                 <div class="info">
-                    <h4>Project Description</h4>
-                    <p>WebApp Dev</p>
+                    <a href="https://github.com/Alejo-Santis/Challenge-Oracle-ONE-Encriptador" target="_blank">Repo</a>
+                    <a class="repo" href="https://alejo-santis.github.io/Challenge-Oracle-ONE-Encriptador/" target="_blank">View Demo</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/app-eventos.png" alt="Project image">
+                <div class="info">
+                    <a href="#">Repo</a>
+                    <a class="repo" href="#">View Demo</a>
                 </div>
             </div>
             
@@ -250,14 +325,14 @@
         <div class="container__contact-form">
             <form action="">
                 <div class="form__row half">
-                    <input type="text" placeholder="Fullname" class="input-half">
-                    <input type="email" placeholder="Email Address" class="input-half">
+                    <input type="text" placeholder="Fullname" class="input-half" required>
+                    <input type="email" placeholder="Email Address" class="input-half" required>
                 </div>
                 <div class="form__row">
-                    <input type="text" placeholder="Theme..." class="input-full">
+                    <input type="text" placeholder="Theme..." class="input-full" required>
                 </div>
                 <div class="form__row">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full" required></textarea>
                 </div>
                 <input type="submit" value="Send Message" class="btn-send">
             </form>
@@ -266,12 +341,14 @@
 
     <!-- section footer -->
     <footer>
-        <p>Todos los derechos reservados &copy 2022</p>
-        <div class="socialmedia">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
+        <p>
+            <i class="fa-solid fa-code"></i>
+            Alejandro Santis Castro | Todos los derechos reservados &copy 2023</p>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/asantiscastro/?locale=ms_MY" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/alejo-santis-castro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Alejo-Santis" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
     </footer>
 
     <script src="js/main.js"></script>

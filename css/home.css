@@ -36,7 +36,10 @@ html {
 }
 
 #home .content header .content__header h1 {
-    text-align: center;
+    text-align: center;   
+}
+#home .content header .content__header a {
+    text-decoration: none;
     color: #ff5080;
 }
 
